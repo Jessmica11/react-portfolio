@@ -1,26 +1,22 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import './Project.css'; 
 
-const Project = ({ imageUrl, title, description, externalUrl }) => {
+const Project = ({ project }) => {
+  const { title, description, imageUrl, externalUrl } = project;
+
   return (
-    <div className="project-box">
-      <a href={externalUrl} target="_blank" rel="noopener noreferrer">
-        <img src={imageUrl} alt={title} className="project-image" />
-        <div className="project-details">
-          <h3 className="project-title">{title}</h3>
-          <p className="project-description">{description}</p>
-        </div>
-      </a>
+    <div className="card">
+      <div className="card-img-container">
+        <img src={imageUrl} className="card-img-top" alt={title} />
+      </div>
+      <div className="card-body">
+        <h5 className="card-title">{title}</h5>
+        <p className="card-text">{description}</p>
+        <a href={externalUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+          View Project
+        </a>
+      </div>
     </div>
   );
-};
-
-Project.propTypes = {
-  imageUrl: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  externalUrl: PropTypes.string.isRequired,
 };
 
 export default Project;

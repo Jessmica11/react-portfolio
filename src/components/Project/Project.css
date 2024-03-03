@@ -1,48 +1,32 @@
-.project-box {
-    position: relative;
-    width: 100%;
-    margin-bottom: 20px;
+.card {
     overflow: hidden;
 }
 
-.project-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    transition: transform 0.3s ease-in-out;
+.card-img-container {
+    position: relative;
+    overflow: hidden;
 }
 
-.project-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
-    /* Adjust the opacity as needed */
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+.card-img-top {
+    transition: transform 0.5s;
 }
 
-.project-details {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.project-box:hover .project-image {
+.card:hover .card-img-top {
     transform: scale(1.1);
 }
 
-.project-box:hover .project-overlay {
-    opacity: 1;
+.card-body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 1rem;
+    transform: translateY(100%);
+    transition: transform 0.5s;
 }
 
-.project-box:hover .project-details {
-    opacity: 1;
+.card:hover .card-body {
+    transform: translateY(0);
 }

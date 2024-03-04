@@ -9,7 +9,7 @@
 
 [Deployed on Netflify](https://jscheck-portfolio.netlify.app/)
 
-![Gif of application and pages]()
+![Gif of application and pages](./public/assets/portfolio-gif.gif)
 
 ## Requirements
 

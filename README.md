@@ -2,9 +2,14 @@
 
 ## Table of Contents
 
-1. [Project Requirements](#requirements)
-2. [Resources]
-3. []()
+1. [Links](#links)
+2. [Project Requirements](#requirements)
+
+## Links
+
+[Deployed on Netflify]()
+
+![Gif of application and pages]()
 
 ## Requirements
 

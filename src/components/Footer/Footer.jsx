@@ -1,9 +1,10 @@
 import React from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import './Footer.css';
 
 export default function Footer() {
   return (
-    <footer className="bg-light text-center text-lg-start mt-5">
+    <footer className="text-center text-lg-start mt-5">
       <div className="container p-4">
         <div className="d-flex justify-content-between align-items-center">
           <div>
@@ -14,7 +15,8 @@ export default function Footer() {
               <FaLinkedin className="fs-3" />
             </a>
           </div>
-          <p className="text-muted mb-0">© 2024 Jessica Scheck. All rights reserved.</p>
+          {/* I made this copyright dynamic */}
+          <p className="text-muted mb-0">© {new Date().getFullYear()} Jessica Scheck. All rights reserved.</p>
         </div>
       </div>
     </footer>

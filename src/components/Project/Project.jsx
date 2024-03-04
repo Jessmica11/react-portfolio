@@ -1,22 +1,21 @@
 import React from 'react';
+import './Project.css';
 
-const Project = ({ project }) => {
-  const { title, description, imageUrl, externalUrl } = project;
+function Project({ project }) {
+  const { id, title, description, imageUrl, externalUrl } = project;
 
   return (
-    <div className="card">
-      <div className="card-img-container">
-        <img src={imageUrl} className="card-img-top" alt={title} />
-      </div>
-      <div className="card-body">
-        <h5 className="card-title">{title}</h5>
-        <p className="card-text">{description}</p>
-        <a href={externalUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+    <div className={`card project-card project-${id}`}>
+      <div className="overlay">
+        <h5 className="overlay-title">{title}</h5>
+        <p className="overlay-description">{description}</p>
+        <a href={externalUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary overlay-btn">
           View Project
         </a>
       </div>
+      <img src={imageUrl} alt={title} className="card-img-top" />
     </div>
   );
-};
+}
 
 export default Project;

@@ -8,6 +8,7 @@ const projects = [
     description: 'A place for book lovers to create and save book collections',
     imageUrl: '/assets/bookshelf-app.png',
     externalUrl: 'https://book-shelf-ec28e1e38c1b.herokuapp.com/',
+    gitHubUrl: 'https://github.com/Jessmica11/Bookshelf'
   },
   {
     id: 2,
@@ -15,6 +16,7 @@ const projects = [
     description: 'Search by zipcode for providers near you.',
     imageUrl: '/assets/healthcare-hotspot-app.png',
     externalUrl: 'https://andrewcmonson.github.io/healthcare-hotspot/',
+    gitHubUrl: 'https://github.com/Jessmica11/healthcare-hotspot'
   },
   // add more projects later
 ];

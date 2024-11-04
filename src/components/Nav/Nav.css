@@ -17,24 +17,23 @@ nav {
 }
 
 .nav-list {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    background: #fff;
-    width: 100%;
-    z-index: 1000;
-    padding: 10px 0;
-    transition: max-height 0.4s ease-in-out;
-}
-
-.nav-list.open {
     display: flex;
+    /* Default to flex for desktop */
+    flex-direction: row;
+    /* Horizontal layout for larger screens */
+    justify-content: space-evenly;
+    /* Space out items evenly */
+    list-style-type: none;
+    /* Remove bullets */
+    padding: 0;
+    /* Reset padding */
+    margin: 0;
+    /* Reset margin */
 }
 
 li {
-    margin: 10px 0;
+    margin: 0;
+    /* Remove margin for list items */
     text-align: center;
 }
 
@@ -42,6 +41,8 @@ a {
     color: #9ebd9e;
     text-decoration: none;
     transition: color 0.3s, cursor 0.3s;
+    padding: 10px 20px;
+    /* Add padding for clickable area */
 }
 
 a:focus,
@@ -63,5 +64,26 @@ a.active {
 @media (max-width: 768px) {
     .menu-icon {
         display: flex;
+        /* Show the hamburger icon on mobile */
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: #fff;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-in-out;
+        z-index: 1000;
+        padding: 10px 0;
+    }
+
+    .nav-list.open {
+        display: flex;
+        max-height: 500px;
     }
 }

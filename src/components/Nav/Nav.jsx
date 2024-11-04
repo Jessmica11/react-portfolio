@@ -1,25 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Nav.css';
 
-function Nav({ active, toggleMenu }) { // Accept toggleMenu prop
+function Nav() {
+  const [active, setActive] = useState(false); // Initialize active state
+
+  const toggleMenu = () => {
+    setActive(prevActive => !prevActive); // Toggle the active state
+  };
+
   return (
     <nav>
       <button 
         className="menu-icon" 
-        onClick={toggleMenu} // Add click handler here
         aria-expanded={active}
         aria-controls="nav-list"
         aria-label={active ? "Close navigation menu" : "Open navigation menu"}
+        onClick={toggleMenu} // Add onClick to toggle menu
       >
-        {/* Hamburger Icon */}
         <span className={`bar ${active ? 'toggle' : ''}`}></span>
         <span className={`bar ${active ? 'toggle' : ''}`}></span>
         <span className={`bar ${active ? 'toggle' : ''}`}></span>
       </button>
       <ul 
         id="nav-list" 
-        className={`nav-list ${active ? 'open' : ''}`} // Use active prop for visibility
+        className={`nav-list ${active ? 'open' : ''}`} 
         role="menu"
       >
         <li role="none">

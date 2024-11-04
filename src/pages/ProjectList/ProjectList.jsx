@@ -19,9 +19,9 @@ const projects = [
   {
     id: 3,
     title: 'The National Law Review',
-    description: 'Website Migration, Management, Technical SEO, and global digital marketing',
-    imageUrl: '/assets/nano-purification-solutions-website.png',
-    externalUrl: 'https://www.nano-purification.com/en-us',
+    description: 'Technical SEO, UX Design, Content Strategy, and Digital Marketing',
+    imageUrl: '/assets/natlawreview.com-website.png',
+    externalUrl: 'https://natlawreview.com/',
   },
   {
     id: 4,

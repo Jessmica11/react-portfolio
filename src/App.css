@@ -56,3 +56,24 @@ nav {
     text-align: center;
   }
 }
+
+/* New styles for profile image */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .profile-img {
+    max-width: 150px;
+  }
+}

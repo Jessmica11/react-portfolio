@@ -18,6 +18,7 @@ function ContactForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
     const { name, email, message } = formData;
 
     try {
@@ -29,12 +30,12 @@ function ContactForm() {
           name,
           email,
           message
-        })
+        }).toString()
       });
 
       if (response.ok) {
         setSubmissionStatus('Your message has been sent successfully!');
-        setFormData({ name: '', email: '', message: '' }); // Reset form
+        setFormData({ name: '', email: '', message: '' });
       } else {
         setSubmissionStatus('There was a problem submitting your message. Please try again.');
       }

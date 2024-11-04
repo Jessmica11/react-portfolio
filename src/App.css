@@ -62,11 +62,13 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  max-width: 100%; /* Limit container to screen width */
 }
 
 .profile-img {
   width: 100%;
-  max-width: 200px;
+  max-width: 150px;
   height: auto;
   border-radius: 50%;
 }

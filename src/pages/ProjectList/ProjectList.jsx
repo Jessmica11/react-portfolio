@@ -46,7 +46,7 @@ const ProjectList = () => {
   return (
     <section id="portfolio">
       <div className="container">
-        <h2 className="text-center mb-5">Explore My Projects</h2>
+        <h2 className="text-center mb-5"><br />Explore My Projects</h2>
         <div className="row row-cols-2 mb-4">
           {projects.map((project) => (
             <div key={project.id} className="col-md-6 mb-4">

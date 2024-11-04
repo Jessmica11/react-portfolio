@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section id="about" className="text-center">
       <div className="container">
-        <h2 className="mb-5">About Me</h2>
+        <h2 className="mb-5"><br />About Me</h2>
         <div className="profile-container mx-auto">
           <img
             src="./assets/contact-photo-me.png" 

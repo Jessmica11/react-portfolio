@@ -1,20 +1,21 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link for client-side routing
 import './Nav.css';
 
 function Nav({ active, toggleMenu }) {
   return (
     <nav>
-      <div className="menu-icon" onClick={toggleMenu}>
+      <div className="menu-icon" onClick={toggleMenu} aria-label="Toggle navigation menu">
         <div className={`bar ${active ? 'open' : ''}`}></div>
         <div className={`bar ${active ? 'open' : ''}`}></div>
         <div className={`bar ${active ? 'open' : ''}`}></div>
       </div>
       <ul className={`nav-list ${active ? 'open' : ''}`}>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/portfolio">Portfolio</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <li><a href="/resume">Resume</a></li>
+        <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
+        <li><Link to="/about" onClick={toggleMenu}>About</Link></li>
+        <li><Link to="/portfolio" onClick={toggleMenu}>Portfolio</Link></li>
+        <li><Link to="/contact" onClick={toggleMenu}>Contact</Link></li>
+        <li><Link to="/resume" onClick={toggleMenu}>Resume</Link></li>
       </ul>
     </nav>
   );

@@ -24,7 +24,7 @@ nav {}
 
 .menu-icon {
   display: none;
-  /* Hidden by default, shown on mobile */
+  /* Hidden by default */
   flex-direction: column;
   cursor: pointer;
 }
@@ -32,6 +32,7 @@ nav {}
 /* Default styles for the nav-list */
 .nav-list {
   display: flex;
+  /* Applies on larger screens */
   justify-content: space-evenly;
   list-style-type: none;
 }
@@ -56,6 +57,7 @@ nav {}
     overflow: hidden;
     transition: max-height 0.4s ease-in-out;
     z-index: 1000;
+    padding: 10px 0;
   }
 
   .nav-list.open {
@@ -66,11 +68,11 @@ nav {}
 
 /* Link styles */
 nav a {
-  color: #333;
-  /* Default link color */
+  color: #9ebd9e;
   text-decoration: none;
   transition: color 0.3s, cursor 0.3s;
-  padding: 10px;
+  padding: 10px 20px;
+  border: 1px solid transparent;
 }
 
 /* Hover and focus styles for links */
@@ -78,12 +80,14 @@ nav a:hover,
 nav a:focus {
   color: blue;
   cursor: pointer;
+  border-color: blue;
 }
 
 /* Active link styles */
 nav a.active {
   font-weight: bold;
   color: #fff;
+  background-color: #333;
 }
 
 /* New styles for profile image */
@@ -106,5 +110,12 @@ nav a.active {
 @media (max-width: 768px) {
   .profile-img {
     max-width: 150px;
+  }
+}
+
+/* Hide the nav toggle button on larger screens */
+@media (min-width: 769px) {
+  .nav-toggle {
+    display: none;
   }
 }

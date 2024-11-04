@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Nav from '../Nav/Nav';
 import './Header.css';
 
@@ -11,7 +11,7 @@ function Header() {
 
   return (
     <header>
-      <h1>Jessica Scheck - Portfolio App</h1>
+      <h1>Jessica Scheck Portfolio App</h1>
       <button onClick={toggleNav} className="nav-toggle">
         {navActive ? 'Close Menu' : 'Open Menu'} {/* Toggle button text */}
       </button>

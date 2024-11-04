@@ -7,7 +7,7 @@ function Project({ project }) {
   return (
     <div className={`card project-card project-${id}`}>
       <div className="overlay">
-        <h2 className="overlay-title">{title}</h2>
+        <h3 className="overlay-title">{title}</h3>
         <p className="overlay-description">{description}</p>
         <a href={externalUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary overlay-btn">
           View Live

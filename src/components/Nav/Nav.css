@@ -74,11 +74,12 @@ a.active {
         width: 100%;
         display: none;
         transition: max-height 0.4s ease-in-out;
+        max-height: 0;
+        overflow: hidden;
     }
 
     .nav-list.open {
-        display: flex;
-        /* Show when open */
+        max-height: 500px;
     }
 
     li {

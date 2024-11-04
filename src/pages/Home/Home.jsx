@@ -6,7 +6,7 @@ import './Home.css';
 const Home = () => {
   return (
     <section id="home" className="py-5 text-center">
-      <MetaData title="Welcome | Jessica Scheck Portfolio App" description="Explore Jessica Scheck's portfolio and discover her projects and skills." />
+      <MetaData title="Welcome | Jessica Scheck Portfolio" description="Explore Jessica Scheck's portfolio and discover her projects and skills." />
       <div className="container">
         <div className="row">
           <div className="col-md-8 mx-auto">

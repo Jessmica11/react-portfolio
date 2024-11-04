@@ -7,7 +7,7 @@ const Resume = () => {
   return (
     <section id="resume">
       <MetaData 
-        title="Resume | Jessica Scheck Portfolio App" 
+        title="Resume | Jessica Scheck Portfolio" 
         description="View the professional resume of Jessica Scheck, a passionate web developer with expertise in front-end technologies, UX design, and digital marketing." 
       />
       <div className="container">

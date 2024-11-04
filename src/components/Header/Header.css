@@ -24,7 +24,7 @@ nav a {
 /* Change hover color to ensure contrast */
 nav a:hover {
     text-decoration: underline;
-    color: #145214;
+    color: #0D3F16;
 }
 
 /* Add focus styles for better WCAG compliance */

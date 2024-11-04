@@ -47,7 +47,7 @@ const ProjectList = () => {
   return (
     <section id="portfolio">
       <MetaData 
-        title="Project List | Jessica Scheck Portfolio App" 
+        title="Project List | Jessica Scheck Portfolio" 
         description="Explore the various projects I have worked on as a web developer and UX designer." 
       />
       <div className="container">

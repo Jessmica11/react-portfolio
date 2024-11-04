@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section id="about" className="text-center">
       <MetaData 
-        title="About Me | Jessica Scheck Portfolio App" 
+        title="About Me | Jessica Scheck Portfolio" 
         description="Welcome to Jessica Scheck's portfolio! Learn more about my journey and skills as a web developer." 
       />
       <div className="container">

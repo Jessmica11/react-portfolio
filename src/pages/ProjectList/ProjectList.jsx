@@ -4,7 +4,7 @@ import Project from '../../components/Project/Project';
 const projects = [
   {
     id: 1,
-    title: 'VELUX USA & Canada Websites',
+    title: 'VELUX USA & Canada',
     description: 'Complete website & SEO management and reporting for VELUXUSA.com and VELUX.ca (en-CA & fr-CA)',
     imageUrl: '/assets/VELUX-USA-website.png',
     externalUrl: 'https://www.veluxusa.com/',

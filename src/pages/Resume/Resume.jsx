@@ -2,7 +2,7 @@ import React from 'react';
 import MetaData from '../../components/MetaData/MetaData';
 
 const Resume = () => {
-  const resumeFilePath = './assets/Jessica-Scheck-Web-Dev-IT-Resume-10-2024.pdf';
+  const resumeFilePath = './assets/Jessica-Scheck-Web-Dev-IT-Resume-11-2024.pdf';
 
   return (
     <section id="resume">

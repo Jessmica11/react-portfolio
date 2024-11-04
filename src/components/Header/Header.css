@@ -18,11 +18,19 @@ nav a {
     color: white;
     text-decoration: none;
     margin: 0 15px;
+    transition: color 0.3s;
 }
 
+/* Change hover color to ensure contrast */
 nav a:hover {
     text-decoration: underline;
     color: #145214;
+}
+
+/* Add focus styles for better WCAG compliance */
+nav a:focus {
+    outline: 3px solid #fff;
+    outline-offset: 2px;
 }
 
 h1 {

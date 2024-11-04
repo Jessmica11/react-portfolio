@@ -4,6 +4,7 @@ nav {
 
 .menu-icon {
     display: none;
+    /* Hidden by default, shown on mobile */
     flex-direction: column;
     cursor: pointer;
 }
@@ -26,6 +27,7 @@ nav {
 
 .nav-list.open {
     display: flex;
+    /* Show when open */
 }
 
 li {
@@ -33,7 +35,7 @@ li {
 }
 
 a {
-    color: #333;
+    color: #9ebd9e;
     text-decoration: none;
     transition: color 0.3s, cursor 0.3s;
 }
@@ -41,17 +43,18 @@ a {
 /* Add focus styles for better WCAG */
 a:focus,
 .menu-icon:focus {
-    outline: 2px solid #745151;
+    outline: 2px solid #6b9a6b;
     outline-offset: 2px;
 }
 
 a:hover {
-    color: #745151;
+    color: #6b9a6b;
     cursor: pointer;
 }
 
 a.active {
     font-weight: bold;
+    color: #6b9a6b;
 }
 
 /* Adjustments for screen sizes below 600px */
@@ -69,15 +72,13 @@ a.active {
         left: 0;
         background: #fff;
         width: 100%;
-        max-height: 0;
-        overflow: hidden;
+        display: none;
         transition: max-height 0.4s ease-in-out;
-        visibility: hidden;
     }
 
     .nav-list.open {
-        max-height: 500px;
-        visibility: visible;
+        display: flex;
+        /* Show when open */
     }
 
     li {

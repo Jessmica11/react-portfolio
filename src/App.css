@@ -46,7 +46,6 @@ nav {}
   /* Make sure the nav-list is hidden on mobile by default */
   .nav-list {
     display: none;
-    /* Hidden by default */
     flex-direction: column;
     position: absolute;
     top: 60px;
@@ -57,27 +56,31 @@ nav {}
     overflow: hidden;
     transition: max-height 0.4s ease-in-out;
     z-index: 1000;
-    /* Ensure it's on top of other content */
   }
 
   .nav-list.open {
     display: flex;
-    /* Show when open */
     max-height: 500px;
   }
 }
 
+/* Link styles */
 nav a {
   color: #333;
+  /* Default link color */
   text-decoration: none;
   transition: color 0.3s, cursor 0.3s;
+  padding: 10px;
 }
 
-nav a:hover {
+/* Hover and focus styles for links */
+nav a:hover,
+nav a:focus {
   color: blue;
   cursor: pointer;
 }
 
+/* Active link styles */
 nav a.active {
   font-weight: bold;
   color: #fff;

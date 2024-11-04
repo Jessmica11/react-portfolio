@@ -13,10 +13,10 @@ function Nav() {
     <nav>
       <button 
         className="menu-icon" 
-        onClick={toggleMenu} 
+        onClick={toggleMenu}
         aria-expanded={isOpen}
         aria-controls="nav-list"
-        aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+        aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"} // Accessible label
       >
         {/* Hamburger Icon */}
         <span className={`bar ${isOpen ? 'toggle' : ''}`}></span>
@@ -25,8 +25,8 @@ function Nav() {
       </button>
       <ul 
         id="nav-list" 
-        className={`nav-list ${isOpen ? 'open' : ''}`} 
-        role="menu"
+        className={`nav-list ${isOpen ? 'open' : ''}`} // Class based on isOpen state
+        role="menu" // Role for accessibility
       >
         <li role="none">
           <Link to="/" role="menuitem">Home</Link>

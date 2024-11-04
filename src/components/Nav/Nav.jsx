@@ -13,7 +13,7 @@ function Nav({ active, toggleMenu }) {
       <ul className={`nav-list ${active ? 'open' : ''}`}>
         <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
         <li><Link to="/about" onClick={toggleMenu}>About</Link></li>
-        <li><Link to="/portfolio" onClick={toggleMenu}>Portfolio</Link></li>
+        <li><Link to="/portfolio" onClick={toggleMenu}>Projects</Link></li>
         <li><Link to="/contact" onClick={toggleMenu}>Contact</Link></li>
         <li><Link to="/resume" onClick={toggleMenu}>Resume</Link></li>
       </ul>

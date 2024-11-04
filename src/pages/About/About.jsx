@@ -7,7 +7,7 @@ const About = () => {
         <h2 className="mb-5">About Me</h2>
         <div className="profile-container mx-auto">
           <img
-            src="./assets/portfolio-photo.jpeg" 
+            src="./assets/contact-photo-me.png" 
             alt="Profile"
             className="profile-img rounded-circle"
           />

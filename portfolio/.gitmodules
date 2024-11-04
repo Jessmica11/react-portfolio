@@ -1,0 +1,4 @@
+[submodule "portfolio/JS-portfolio"]
+    path = portfolio/JS-portfolio
+    url = https://github.com/Jessmica11/JS-portfolio
+

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Resume = () => {
-  const resumeFilePath = './assets/Web-Dev-IT-Resume-2024.pdf';
+  const resumeFilePath = './assets/Jessica-Scheck-Web-Dev-IT-Resume-2024.pdf';
 
   return (
     <section id="resume">

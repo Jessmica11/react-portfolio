@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import MetaData from '../../components/MetaData/MetaData';
 import './Home.css';
 
 const Home = () => {
   return (
     <section id="home" className="py-5 text-center">
+      <MetaData title="Welcome | Jessica Scheck Portfolio App" description="Explore Jessica Scheck's portfolio and discover her projects and skills." />
       <div className="container">
         <div className="row">
           <div className="col-md-8 mx-auto">
@@ -24,9 +26,6 @@ const Home = () => {
         </div>
         <div className="row mt-4">
           <div className="col-md-8 mx-auto">
-            <p className="mb-4">
-              Interested in working together or have a project idea? Let's connect and bring it to life!
-            </p>
             <Link to="/contact" className="btn btn-primary">
               Get in Touch
             </Link>

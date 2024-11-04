@@ -1,8 +1,10 @@
 import React from 'react';
+import MetaData from '../../components/MetaData/MetaData';
 
 const About = () => {
   return (
     <section id="about" className="text-center">
+      <MetaData title="About Me | Jessica Scheck Portfolio App" description="Welcome to Jessica Scheck's portfolio! Learn more about my journey and skills as a web developer." />
       <div className="container">
         <h2 className="mb-5"><br />About Me</h2>
         <div className="profile-container mx-auto">

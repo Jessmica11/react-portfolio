@@ -1,4 +1,5 @@
 import React from 'react';
+import MetaData from '../../components/MetaData/MetaData';
 import Project from '../../components/Project/Project';
 
 const projects = [
@@ -45,6 +46,10 @@ const projects = [
 const ProjectList = () => {
   return (
     <section id="portfolio">
+      <MetaData 
+        title="Project List | Jessica Scheck Portfolio App" 
+        description="Explore the various projects I have worked on as a web developer and UX designer." 
+      />
       <div className="container">
         <h2 className="text-center mb-5"><br />Explore My Projects</h2>
         <div className="row row-cols-2 mb-4">

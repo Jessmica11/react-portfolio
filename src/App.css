@@ -19,8 +19,9 @@
   color: #888;
 }
 
+/* Navigation styles */
 nav {
-  /* Styles for the navigation */
+  /* General styles for the navigation can go here if needed */
 }
 
 .menu-icon {
@@ -30,27 +31,38 @@ nav {
   cursor: pointer;
 }
 
-/* Ensure the nav-list is hidden by default */
+/* Default styles for the nav-list */
 .nav-list {
-  display: none;
-  /* Hide by default on mobile */
-}
-
-.nav-list.open {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Style for the navigation list */
-nav ul {
-  list-style-type: none;
   display: flex;
   justify-content: space-evenly;
+  list-style-type: none;
 }
 
-nav li {
-  margin-right: 15px;
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: flex;
+    /* Show hamburger icon on mobile */
+  }
+
+  /* Make sure the nav-list is hidden on mobile by default */
+  .nav-list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+  }
+
+  .nav-list.open {
+    display: flex;
+    max-height: 500px;
+  }
 }
 
 nav a {
@@ -67,12 +79,6 @@ nav a:hover {
 nav a.active {
   font-weight: bold;
   color: #fff;
-}
-
-ul.visible {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
 }
 
 /* New styles for profile image */
@@ -96,27 +102,5 @@ ul.visible {
 @media (max-width: 768px) {
   .profile-img {
     max-width: 150px;
-  }
-
-  .menu-icon {
-    display: flex;
-    /* Show hamburger icon on mobile */
-  }
-
-  /* Make sure to add styling for .nav-list for mobile */
-  .nav-list {
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    background: #fff;
-    width: 100%;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease-in-out;
-  }
-
-  .nav-list.open {
-    max-height: 500px;
   }
 }

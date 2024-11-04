@@ -9,9 +9,13 @@ function Project({ project }) {
       <div className="overlay">
         <h3 className="overlay-title">{title}</h3>
         <p className="overlay-description">{description}</p>
-        <a href={externalUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary overlay-btn">
-          View Live
-        </a>
+
+        {/* Conditionally render the View Live button only if externalUrl exists */}
+        {externalUrl && (
+          <a href={externalUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary overlay-btn">
+            View Live
+          </a>
+        )}
         {/* Conditionally render the GitHub button only if gitHubUrl exists */}
         {gitHubUrl && (
           <a href={gitHubUrl} target="_blank" rel="noopener noreferrer" className="btn btn-secondary overlay-btn">

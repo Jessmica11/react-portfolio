@@ -1,11 +1,9 @@
 nav {
     position: relative;
-    /* To position the menu */
 }
 
 .menu-icon {
     display: none;
-    /* Hidden by default */
     flex-direction: column;
     cursor: pointer;
 }
@@ -28,7 +26,6 @@ nav {
 
 .nav-list.open {
     display: flex;
-    /* Show list when open */
 }
 
 li {
@@ -39,6 +36,13 @@ a {
     color: #333;
     text-decoration: none;
     transition: color 0.3s, cursor 0.3s;
+}
+
+/* Add focus styles for better WCAG */
+a:focus,
+.menu-icon:focus {
+    outline: 2px solid #745151;
+    outline-offset: 2px;
 }
 
 a:hover {
@@ -68,10 +72,12 @@ a.active {
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.4s ease-in-out;
+        visibility: hidden;
     }
 
     .nav-list.open {
         max-height: 500px;
+        visibility: visible;
     }
 
     li {

@@ -39,14 +39,14 @@ const projects = [
     externalUrl: 'https://book-shelf-ec28e1e38c1b.herokuapp.com/',
     gitHubUrl: 'https://github.com/Jessmica11/Bookshelf'
   },
-  // add more projects later
+  // add more projects as I create
 ];
 
 const ProjectList = () => {
   return (
     <section id="portfolio">
       <div className="container">
-        <h1 className="text-center mb-5">My Portfolio</h1>
+        <h2 className="text-center mb-5">Explore My Projects</h2>
         <div className="row row-cols-2 mb-4">
           {projects.map((project) => (
             <div key={project.id} className="col-md-6 mb-4">

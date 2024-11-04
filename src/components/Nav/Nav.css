@@ -1,29 +1,39 @@
 nav {
-    ul {
-        list-style-type: none;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+    position: relative;
+}
 
-    li {
-        margin: 0 15px 15px 0;
-    }
+.menu-icon {
+    display: none;
+    /* Hidden by default */
+    flex-direction: column;
+    cursor: pointer;
+}
 
-    a {
-        color: #333;
-        text-decoration: none;
-        transition: color 0.3s, cursor 0.3s;
-    }
+.bar {
+    height: 4px;
+    width: 25px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
+}
 
-    a:hover {
-        color: #745151;
-        cursor: pointer;
-    }
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    transition: max-height 0.4s ease-in-out;
+    overflow: hidden;
+    max-height: 100px;
+}
 
-    a.active {
-        font-weight: bold;
-    }
+.nav-list.open {
+    max-height: 500px;
+    /* Expand to a larger size when open */
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
 
     /* adjustments for screen sizes below 600px */
     @media (max-width: 600px) {

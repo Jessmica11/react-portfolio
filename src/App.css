@@ -4,7 +4,7 @@
   color: #2C2525;
 }
 
-/* media query for responsiveness */
+/* Media query for responsiveness */
 @media (max-width: 768px) {
   #root {
     padding: 1rem;
@@ -20,8 +20,7 @@
 }
 
 /* Navigation styles */
-nav {
-}
+nav {}
 
 .menu-icon {
   display: none;
@@ -47,6 +46,7 @@ nav {
   /* Make sure the nav-list is hidden on mobile by default */
   .nav-list {
     display: none;
+    /* Hidden by default */
     flex-direction: column;
     position: absolute;
     top: 60px;
@@ -56,10 +56,13 @@ nav {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease-in-out;
+    z-index: 1000;
+    /* Ensure it's on top of other content */
   }
 
   .nav-list.open {
     display: flex;
+    /* Show when open */
     max-height: 500px;
   }
 }
@@ -87,7 +90,6 @@ nav a.active {
   align-items: center;
   overflow: hidden;
   max-width: 100%;
-  /* Limit container to screen width */
 }
 
 .profile-img {

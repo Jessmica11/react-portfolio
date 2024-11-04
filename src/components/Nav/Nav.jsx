@@ -7,7 +7,6 @@ function Nav({ active }) { // Accept active prop
     <nav>
       <button 
         className="menu-icon" 
-        onClick={toggleMenu}
         aria-expanded={active}
         aria-controls="nav-list"
         aria-label={active ? "Close navigation menu" : "Open navigation menu"}

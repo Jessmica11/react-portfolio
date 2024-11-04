@@ -6,7 +6,7 @@ function Header() {
   const [navActive, setNavActive] = useState(false);
 
   const toggleNav = () => {
-    setNavActive(!navActive); // Toggle the active state
+    setNavActive(!navActive);
   };
 
   return (

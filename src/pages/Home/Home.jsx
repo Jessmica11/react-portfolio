@@ -7,7 +7,7 @@ const Home = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-8 mx-auto">
-            <h2 className="display-4 mb-4"><br />Welcome to My Portfolio</h2>
+            <h2 className="display-4 mb-4">Welcome to My Portfolio</h2>
             <p className="lead">
               I'm a passionate web developer with a focus on creating meaningful and innovative projects.
             </p>

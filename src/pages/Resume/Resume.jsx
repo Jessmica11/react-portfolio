@@ -2,7 +2,7 @@ import React from 'react';
 import MetaData from '../../components/MetaData/MetaData';
 
 const Resume = () => {
-  const resumeFilePath = './assets/Jessica-Scheck-Web-Dev-IT-Resume-2024.pdf';
+  const resumeFilePath = './assets/Jessica-Scheck-Web-Dev-IT-Resume-10-2024.pdf';
 
   return (
     <section id="resume">
@@ -14,7 +14,7 @@ const Resume = () => {
         <h2 className="text-center mb-4">My Resume</h2>
         <div className="text-center">
           <p>Download my resume for more details about my skills and experience.</p>
-          <a href={resumeFilePath} download="Jessica_Scheck_Resume.pdf" className="btn btn-primary" aria-label="Download Jessica Scheck's resume">
+          <a href={resumeFilePath} download="Jessica-Scheck-Resume.pdf" className="btn btn-primary" aria-label="Download Jessica Scheck's resume">
             <strong>Download</strong>
           </a>
         </div>

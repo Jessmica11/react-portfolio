@@ -2,11 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Nav.css';
 
-function Nav({ active }) { // Accept active prop
+function Nav({ active, toggleMenu }) { // Accept toggleMenu prop
   return (
     <nav>
       <button 
         className="menu-icon" 
+        onClick={toggleMenu} // Add click handler here
         aria-expanded={active}
         aria-controls="nav-list"
         aria-label={active ? "Close navigation menu" : "Open navigation menu"}

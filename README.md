@@ -9,7 +9,13 @@
 
 [Deployed on Netflify](https://jscheck-portfolio.netlify.app/)
 
-![Gif of application and pages](./public/assets/portfolio-gif.gif)
+### Desktop View
+
+![Gif of application on desktop](./public/assets/portfolio-app-behavior-desktop.gif)
+
+### Mobile View
+
+![Gif of application on mobile](./public/assets/portfolio-behavior-mobile.gif)
 
 ## Requirements
 

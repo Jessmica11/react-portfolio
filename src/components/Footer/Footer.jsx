@@ -16,7 +16,7 @@ export default function Footer() {
             </a>
           </div>
           {/* I made this copyright dynamic */}
-          <p className="text-muted mb-0">© {new Date().getFullYear()} React app created by Jessica Scheck. All rights reserved.</p>
+          <p className="mb-0">© {new Date().getFullYear()} React app created by Jessica Scheck. All rights reserved.</p>
         </div>
       </div>
     </footer>

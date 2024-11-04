@@ -1,8 +1,6 @@
 footer {
     background-color: #9ebd9e;
-    /* Footer background */
     color: #fff;
-    /* Footer text color */
     padding: 20px 0;
     margin-top: 50px;
 }
@@ -16,18 +14,15 @@ footer {
 .footer-icons {
     margin-top: 20px;
     display: flex;
-    gap: 24px;
-    /* Spacing between social media icons */
+    gap: 32px;
 }
 
 .footer-icons a {
     color: #fff;
-    /* Icon color */
     text-decoration: none;
     font-size: 2.5rem;
 }
 
 .footer-icons a:hover {
     color: #007bff;
-    /* Hover color for icons */
 }

@@ -37,7 +37,6 @@ const projects = [
     title: 'Bookshelf App',
     description: 'A place for book lovers to create and save book collections',
     imageUrl: '/assets/bookshelf-app.png',
-    externalUrl: 'https://book-shelf-ec28e1e38c1b.herokuapp.com/',
     gitHubUrl: 'https://github.com/Jessmica11/Bookshelf'
   },
   // add more projects as I create

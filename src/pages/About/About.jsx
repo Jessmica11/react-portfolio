@@ -33,8 +33,8 @@ const About = () => {
         </div>
         {/* Button for the resume download page */}
         <div className="mt-4">
-          <Link to="/resume" className="btn btn-primary">
-            View Resume
+          <Link to="/portfolio" className="btn btn-primary">
+            View Projects
           </Link>
         </div>
       </div>

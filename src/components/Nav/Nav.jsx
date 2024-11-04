@@ -1,11 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Nav.css';
 
 function Navigation() {
+  const [isOpen, setIsOpen] = useState(false); // State to track if the menu is open
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen); // Toggle the menu open/close state
+  };
+
   return (
     <nav>
-      {/* List items */}
-      <ul>
+      <div className="menu-icon" onClick={toggleMenu}>
+        {/* Hamburger Icon */}
+        <span className={`bar ${isOpen ? 'toggle' : ''}`}></span>
+        <span className={`bar ${isOpen ? 'toggle' : ''}`}></span>
+        <span className={`bar ${isOpen ? 'toggle' : ''}`}></span>
+      </div>
+      <ul className={`nav-list ${isOpen ? 'open' : ''}`}>
         <li>
           <Link to="/">Home</Link>
         </li>

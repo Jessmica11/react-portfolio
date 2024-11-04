@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Nav.css';
 
-function Navigation() {
+function Nav() {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -28,8 +28,8 @@ function Navigation() {
         className={`nav-list ${isOpen ? 'open' : ''}`} 
         role="menu"
       >
-        <li role="none"> {/* Indicates that this list item is not a menu item */}
-          <Link to="/" role="menuitem">Home</Link> {/* Defines this link as a menu item */}
+        <li role="none">
+          <Link to="/" role="menuitem">Home</Link>
         </li>
         <li role="none">
           <Link to="/about" role="menuitem">About Me</Link>
@@ -48,4 +48,4 @@ function Navigation() {
   );
 }
 
-export default Navigation;
+export default Nav;

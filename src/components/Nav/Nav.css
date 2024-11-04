@@ -27,7 +27,6 @@ nav {
 
 .nav-list.open {
     display: flex;
-    /* Show when open */
 }
 
 li {
@@ -54,7 +53,9 @@ a:hover {
 
 a.active {
     font-weight: bold;
+    /* Bold text for active link */
     color: #6b9a6b;
+    /* Active link color */
 }
 
 /* Adjustments for screen sizes below 600px */
@@ -76,9 +77,11 @@ a.active {
         transition: max-height 0.4s ease-in-out;
         max-height: 0;
         overflow: hidden;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     }
 
     .nav-list.open {
+        display: flex;
         max-height: 500px;
     }
 

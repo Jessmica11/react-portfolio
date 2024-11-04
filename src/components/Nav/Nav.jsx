@@ -1,47 +1,20 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 import './Nav.css';
 
-function Nav() {
-  const [active, setActive] = useState(false); // Initialize active state
-
-  const toggleMenu = () => {
-    setActive(prevActive => !prevActive); // Toggle the active state
-  };
-
+function Nav({ active, toggleMenu }) {
   return (
     <nav>
-      <button 
-        className="menu-icon" 
-        aria-expanded={active}
-        aria-controls="nav-list"
-        aria-label={active ? "Close navigation menu" : "Open navigation menu"}
-        onClick={toggleMenu} // Add onClick to toggle menu
-      >
-        <span className={`bar ${active ? 'toggle' : ''}`}></span>
-        <span className={`bar ${active ? 'toggle' : ''}`}></span>
-        <span className={`bar ${active ? 'toggle' : ''}`}></span>
-      </button>
-      <ul 
-        id="nav-list" 
-        className={`nav-list ${active ? 'open' : ''}`} 
-        role="menu"
-      >
-        <li role="none">
-          <Link to="/" role="menuitem">Home</Link>
-        </li>
-        <li role="none">
-          <Link to="/about" role="menuitem">About Me</Link>
-        </li>
-        <li role="none">
-          <Link to="/portfolio" role="menuitem">Portfolio</Link>
-        </li>
-        <li role="none">
-          <Link to="/contact" role="menuitem">Contact</Link>
-        </li>
-        <li role="none">
-          <Link to="/resume" role="menuitem">Resume</Link>
-        </li>
+      <div className="menu-icon" onClick={toggleMenu}>
+        <div className={`bar ${active ? 'open' : ''}`}></div>
+        <div className={`bar ${active ? 'open' : ''}`}></div>
+        <div className={`bar ${active ? 'open' : ''}`}></div>
+      </div>
+      <ul className={`nav-list ${active ? 'open' : ''}`}>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/portfolio">Portfolio</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="/resume">Resume</a></li>
       </ul>
     </nav>
   );

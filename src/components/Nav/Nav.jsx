@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';  // Import Link
+import { Link } from 'react-router-dom';
 import './Nav.css';
 
 function Nav({ active, toggleMenu }) {
@@ -11,11 +11,11 @@ function Nav({ active, toggleMenu }) {
         <div className={`bar ${active ? 'open' : ''}`}></div>
       </div>
       <ul className={`nav-list ${active ? 'open' : ''}`}>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/portfolio">Portfolio</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
-        <li><Link to="/resume">Resume</Link></li>
+        <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
+        <li><Link to="/about" onClick={toggleMenu}>About</Link></li>
+        <li><Link to="/portfolio" onClick={toggleMenu}>Portfolio</Link></li>
+        <li><Link to="/contact" onClick={toggleMenu}>Contact</Link></li>
+        <li><Link to="/resume" onClick={toggleMenu}>Resume</Link></li>
       </ul>
     </nav>
   );

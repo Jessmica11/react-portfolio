@@ -1,32 +1,26 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './Nav.css';
 
-function Nav() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
+function Nav({ active }) { // Accept active prop
   return (
     <nav>
       <button 
         className="menu-icon" 
         onClick={toggleMenu}
-        aria-expanded={isOpen}
+        aria-expanded={active}
         aria-controls="nav-list"
-        aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"} // Accessible label
+        aria-label={active ? "Close navigation menu" : "Open navigation menu"}
       >
         {/* Hamburger Icon */}
-        <span className={`bar ${isOpen ? 'toggle' : ''}`}></span>
-        <span className={`bar ${isOpen ? 'toggle' : ''}`}></span>
-        <span className={`bar ${isOpen ? 'toggle' : ''}`}></span>
+        <span className={`bar ${active ? 'toggle' : ''}`}></span>
+        <span className={`bar ${active ? 'toggle' : ''}`}></span>
+        <span className={`bar ${active ? 'toggle' : ''}`}></span>
       </button>
       <ul 
         id="nav-list" 
-        className={`nav-list ${isOpen ? 'open' : ''}`} // Class based on isOpen state
-        role="menu" // Role for accessibility
+        className={`nav-list ${active ? 'open' : ''}`} // Use active prop for visibility
+        role="menu"
       >
         <li role="none">
           <Link to="/" role="menuitem">Home</Link>

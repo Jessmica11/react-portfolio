@@ -36,9 +36,9 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-  color: blue;
+  color: #0D3F16;
   cursor: pointer;
-  border-color: blue;
+  border-color: #0D3F16;
 }
 
 nav a.active {

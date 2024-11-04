@@ -26,9 +26,9 @@ const Home = () => {
             <p className="mb-4">
               Interested in working together or have a project idea? Let's connect and bring it to life!
             </p>
-            <a href="/contact" className="btn btn-primary">
+            <Link to="/contact" className="btn btn-primary">
               Get in Touch
-            </a>
+            </Link>
           </div>
         </div>
       </div>

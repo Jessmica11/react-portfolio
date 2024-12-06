@@ -26,8 +26,8 @@ const Home = () => {
         </div>
         <div className="row mt-4">
           <div className="col-md-8 mx-auto">
-            <Link to="/contact" className="btn btn-primary">
-              Get in Touch
+            <Link to="/portfolio" className="btn btn-primary">
+              See My Work
             </Link>
           </div>
         </div>

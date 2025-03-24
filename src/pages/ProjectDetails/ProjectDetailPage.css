@@ -1,0 +1,62 @@
+.project-detail-page {
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.project-header {
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.project-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.parallax-section {
+    position: relative;
+    height: 500px;
+    background: url('/path-to-image.jpg') center/cover no-repeat fixed;
+    background-attachment: fixed;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax-section .parallax-content {
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.project-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.project-images img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.project-images img:hover {
+    transform: scale(1.05);
+}
+
+.project-footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f5f5f5;
+}
+
+.project-footer p {
+    font-size: 1.2rem;
+}

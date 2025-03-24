@@ -5,7 +5,7 @@ import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import ProjectList from "./pages/ProjectList/ProjectList";
-import Contact from "./pages/Contact/Contact";
+import ProjectDetailPage from "./pages/ProjectDetails/ProjectDetailPage";
 import Resume from "./pages/Resume/Resume";
 import "./App.css";
 
@@ -17,7 +17,11 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/portfolio" element={<ProjectList />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/project/:id" element={<ProjectDetailPage />} />
+        <Route
+          path="/contact"
+          element={<a href="mailto:jmscheck11@gmail.com?subject=React Portfolio Contact">Contact Me</a>}
+        />
         <Route path="/resume" element={<Resume />} />
       </Routes>
       <Footer />

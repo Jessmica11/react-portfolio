@@ -12,10 +12,9 @@ function Nav({ active, toggleMenu }) {
       </div>
       <ul className={`nav-list ${active ? 'open' : ''}`}>
         <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
-        <li><Link to="/about" onClick={toggleMenu}>About</Link></li>
         <li><Link to="/portfolio" onClick={toggleMenu}>Projects</Link></li>
-        <li><Link to="/contact" onClick={toggleMenu}>Contact</Link></li>
-        <li><Link to="/resume" onClick={toggleMenu}>Resume</Link></li>
+        <li><Link to="/about" onClick={toggleMenu}>About Me</Link></li>
+        <li><a href="mailto:jmscheck11@gmail.com?subject='React Portfolio Contact'" onClick={toggleMenu}>Contact</a></li>
       </ul>
     </nav>
   );

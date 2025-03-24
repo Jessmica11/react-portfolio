@@ -10,9 +10,11 @@ function Header() {
   };
 
   return (
-    <header>
-      <h1>Jessica Scheck Portfolio</h1>
-      <Nav active={navActive} toggleMenu={toggleNav} /> {/* Pass the toggle function */}
+    <header className="header">
+      <div className="header-content">
+        <h1 className="header-title">Jessica Scheck Portfolio</h1>
+        <Nav active={navActive} toggleMenu={toggleNav} />
+      </div>
     </header>
   );
 }

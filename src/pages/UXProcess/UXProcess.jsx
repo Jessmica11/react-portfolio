@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Parallax } from "react-parallax";
 import MetaData from "../../components/MetaData/MetaData";
 import "./UXProcess.css";
@@ -63,9 +64,9 @@ const UXProcess = () => {
 
       <section className="cta-section text-center">
         <h3 className="mt-5">Want to see this process in action?</h3>
-        <a href="/portfolio" className="btn btn-primary mt-3">
+        <Link to="/portfolio" className="btn btn-primary mt-3">
           Explore My Work →
-        </a>
+        </Link>
       </section>
     </div>
   );

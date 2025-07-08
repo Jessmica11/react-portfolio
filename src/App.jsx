@@ -7,11 +7,13 @@ import About from "./pages/About/About";
 import ProjectList from "./pages/ProjectList/ProjectList";
 import UXProcess from "./pages/UXProcess/UXProcess";
 import Resume from "./pages/Resume/Resume";
+import ScrollToTop from "./components/Scroll/ScrolltoTop";
 import "./App.css";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Header />
       <main style={{ flex: 1 }}>
         <Routes>

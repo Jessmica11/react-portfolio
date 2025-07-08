@@ -1,0 +1,29 @@
+.ux-process-container {
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+}
+
+.parallax-section {
+    padding: 5rem 2rem;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.ux-steps ul {
+    max-width: 720px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    list-style: none;
+}
+
+.ux-steps li {
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+}
+
+.cta-section {
+    padding: 4rem 2rem;
+    background: #f9f9f9;
+    text-align: center;
+}

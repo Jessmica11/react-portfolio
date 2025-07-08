@@ -1,40 +1,40 @@
 header {
     background-color: #9ebd9e;
-    padding: 1rem 2%;
     color: white;
-    border-radius: 20px;
-    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    padding: 1.25rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 16px 16px;
+    font-family: system-ui, sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 nav {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
-    font-size: 1.5rem;
-    font-weight: bold;
+    gap: 1rem;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
-    transition: color 0.3s;
+    font-weight: 500;
+    padding: 0.5rem 0.75rem;
+    transition: all 0.3s ease-in-out;
 }
 
-/* Change hover color to ensure contrast */
-nav a:hover {
-    text-decoration: underline;
-    color: #0D3F16;
-}
-
-/* Add focus styles for better WCAG compliance */
+nav a:hover,
 nav a:focus {
-    outline: 3px solid #fff;
-    outline-offset: 2px;
-}
-
-h1 {
-    margin: 1rem;
-    padding: 0;
-    width: 100%;
+    color: #f0f0f0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
 }

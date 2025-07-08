@@ -1,20 +1,27 @@
-import React from 'react';
-import MetaData from '../../components/MetaData/MetaData';
+import React from "react";
+import MetaData from "../../components/MetaData/MetaData";
 
 const Resume = () => {
-  const resumeFilePath = './assets/Jessica-Scheck-UI-UX-Designer-Web-Dev-Resume-12-2024.pdf';
+  const resumeFilePath = "./assets/Jessica-Scheck-UX-UI-2025.pdf";
 
   return (
     <section id="resume">
-      <MetaData 
-        title="Resume | Jessica Scheck Portfolio" 
-        description="View the professional resume of Jessica Scheck, a passionate web developer with expertise in front-end technologies, UX design, and digital marketing." 
+      <MetaData
+        title="Resume | Jessica Scheck Portfolio"
+        description="View the professional resume of Jessica Scheck, a passionate web developer with expertise in front-end technologies, UX design, and digital marketing."
       />
       <div className="container">
-        <h2 className="text-center mb-4">My Resume</h2>
+        <h2 className="text-center mb-5">My Resume</h2>
         <div className="text-center">
-          <p>Download my resume for more details about my skills and experience.</p>
-          <a href={resumeFilePath} download="Jessica-Scheck-Resume.pdf" className="btn btn-primary" aria-label="Download Jessica Scheck's resume">
+          <p>
+            Download my resume for more details about my skills and experience.
+          </p>
+          <a
+            href={resumeFilePath}
+            download="Jessica-Scheck-Resume.pdf"
+            className="btn btn-primary"
+            aria-label="Download Jessica Scheck's resume"
+          >
             <strong>Download</strong>
           </a>
         </div>

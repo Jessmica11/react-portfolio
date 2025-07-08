@@ -41,7 +41,7 @@ const projects = [
       "Led IA, SEO, and accessibility audits for US, UK, and CA rollout.",
       "Worked with global dev teams to build and QA modular CMS components in AEM.",
       "Established content governance standards and brand-aligned templates",
-      "Reported monthly analytics results and site performance with Atlas Copco marketing leadership",
+      "Reported monthly analytics results and site performance to Atlas Copco marketing leadership",
     ],
   },
   {
